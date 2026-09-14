@@ -16,10 +16,24 @@ if(localStorage.getItem('collapsed')=== 'true'){
     sidebar.classList.add('collapsed')
 }
 
+// toggle menubar with localStorage persistence
+openbtn.addEventListener('click',()=>{
+    sidebar.classList.toggle('show-sidebar')
+    sidebar.classList.remove('collapsed')
+
+    localStorage.setItem('showsidebar',sidebar.classList.contains('show-sidebar'))
+})
+if(localStorage.getItem('showsidebar') ==='true'){
+    sidebar.classList.add('show-sidebar')
+}
+
+closebtn.addEventListener('click',()=>{
+    sidebar.classList.remove('show-sidebar')
+
+})
 
 
 //adding themes and localStorage memory
-
 light.addEventListener('click',()=>{
     document.body.classList.remove('night-theme','dark-theme')
     document.body.classList.add('light-theme')
