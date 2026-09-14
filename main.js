@@ -47,6 +47,8 @@ if(savedTheme ==='light'){
 if(savedTheme ==='night'){
     document.body.classList.add('night-theme')
 }
-if(savedTheme === 'light'){
-    document.body.classList.add('light-theme')
+if(savedTheme === 'dark'){
+    document.body.classList.add('dark-theme')
 }
+
+
