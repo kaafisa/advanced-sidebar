@@ -20,33 +20,33 @@ if(localStorage.getItem('collapsed')=== 'true'){
 
 //adding themes and localStorage memory
 
-// light.addEventListener('click',()=>{
-//     document.body.classList.remove('night-theme','dark-theme')
-//     document.body.classList.add('light-theme')
+light.addEventListener('click',()=>{
+    document.body.classList.remove('night-theme','dark-theme')
+    document.body.classList.add('light-theme')
 
-//     localStorage.setItem('theme','light')
-// })
-// night.addEventListener('click',()=>{
-//     document.body.classList.remove('light-theme','dark-theme')
-//     document.body.classList.add('night-theme')
+    localStorage.setItem('theme','light')
+})
+night.addEventListener('click',()=>{
+    document.body.classList.remove('light-theme','dark-theme')
+    document.body.classList.add('night-theme')
 
-//     localStorage.setItem('theme','night')
-// })
-// dark.addEventListener('click',()=>{
-//     document.body.classList.remove('light-theme','night-theme')
-//     document.body.classList.add('dark-theme')
+    localStorage.setItem('theme','night')
+})
+dark.addEventListener('click',()=>{
+    document.body.classList.remove('light-theme','night-theme')
+    document.body.classList.add('dark-theme')
 
-//     localStorage.setItem('theme','dark')
-// })
+    localStorage.setItem('theme','dark')
+})
 
-// //restoring the theme
-// const savedTheme= localStorage.getItem('theme')
-// if(savedTheme ==='light'){
-//     document.body.classList.add('light-theme')
-// }
-// if(savedTheme ==='night'){
-//     document.body.classList.add('night-theme')
-// }
-// if(savedTheme === 'light'){
-//     document.body.classList.add('light-theme')
-// }
+//restoring the theme
+const savedTheme= localStorage.getItem('theme')
+if(savedTheme ==='light'){
+    document.body.classList.add('light-theme')
+}
+if(savedTheme ==='night'){
+    document.body.classList.add('night-theme')
+}
+if(savedTheme === 'light'){
+    document.body.classList.add('light-theme')
+}
