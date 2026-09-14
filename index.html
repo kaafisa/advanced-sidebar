@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=left_panel_close" />
+    <link rel="stylesheet" href="style.css">
+    <title>advanced-Sidebar</title>
+</head>
+<body>
+    <div class="open-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar__top">
+            <div class="logo">
+                <i class="logo-icon fa-brands fa-square-bluesky"></i>
+                <span class="brand">kuula</span>
+            </div>
+            <span class="collapse-icon material-symbols-outlined">
+                 left_panel_close
+            </span>
+            <div class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>  
+        </div>
+        <div class="sidebar__center">
+            <ul class="list">
+                <li class="list__item">
+                  <i class="list__item-icon fa-solid fa-table-list"></i>
+                  <span class="list__item-text">dashboard</span>
+                </li>
+                <li class="list__item">
+                  <i class="list__item-icon fa-solid fa-magnifying-glass"></i>
+                  <span class="list__item-text">search</span>
+                </li>
+                 <li class="active list__item">
+                    <i class="list__item-icon fa-solid fa-bars-staggered"></i>
+                    <span class="list__item-text">insights</span>
+                </li>
+                <li class="list__item">
+                    <i class="list__item-icon fa-solid fa-book"></i>
+                    <span class="list__item-text">docs</span>
+                </li>
+                <li class="list__item">
+                    <i class="list__item-icon fa-solid fa-users"></i>
+                    <span class="list__item-text">community</span>
+                </li>
+                <li class="list__item">
+                    <i class="list__item-icon fa-solid fa-screwdriver-wrench"></i>
+                    <span class="list__item-text">tools</span>
+                </li>
+                <li class="list__item">
+                    <i class="list__item-icon fa-solid fa-cart-shopping"></i>
+                    <span class="list__item-text">market</span>
+                </li>
+                <li class="list__item">
+                   <i class="list__item-icon fa-solid fa-circle-exclamation"></i>
+                   <span class="list__item-text">obligations</span>
+                </li>
+                <li class="list__item">
+                   <i class="list__item-icon fa-solid fa-power-off"></i>
+                   <span class="list__item-text">logout</span>
+                </li>
+            </ul>
+            </ul>
+        </div>
+        <div class="sidebar__bottom">
+            <div class="box box__light"></div>
+            <div class="box box__night"></div>
+            <div class="box box__dark"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
