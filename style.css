@@ -67,13 +67,11 @@ body.dark-theme {
 }
 .close-btn{
     font-size: 1.25rem;
-    color: #4b4b4b;
     cursor: pointer;
     display: none;
 }
 .collapse-icon{
   font-size: 24px;
-  color: #4b4b4b;
   cursor: ew-resize;
 }
 .list{
