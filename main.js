@@ -31,21 +31,16 @@ if(localStorage.getItem('collapsed')=== 'true'){
 }
 
 
-// toggle menubar with localStorage persistence
+// toggle menubar 
 openbtn.addEventListener('click',()=>{
     sidebar.classList.toggle('show-sidebar')
     sidebar.classList.remove('collapsed')
 
-    localStorage.setItem('sidebar','open')
 })
-if(localStorage.getItem('sidebar') ==='open'){
-    sidebar.classList.add('show-sidebar')
-}
 
 closebtn.addEventListener('click',()=>{
     sidebar.classList.remove('show-sidebar')
 
-    localStorage.setItem('sidebar','closed')
 
 })
 
