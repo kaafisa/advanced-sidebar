@@ -5,16 +5,31 @@ const openbtn=document.querySelector('.open-btn')
 const closebtn=document.querySelector('.close-btn')
 const collapsebtn=document.querySelector('.collapse-icon')
 const sidebar=document.querySelector('.sidebar')
+const tooltip=document.querySelector('.tooltip')
 
 collapsebtn.addEventListener('click',()=>{
   sidebar.classList.toggle('collapsed');
 
+ if (sidebar.classList.contains('collapsed')) {
+        tooltip.textContent = 'Open sidebar';
+    } else {
+        tooltip.textContent = 'Close sidebar';
+    }
+  
   localStorage.setItem('collapsed',sidebar.classList.contains('collapsed'))
 })
 
 if(localStorage.getItem('collapsed')=== 'true'){
     sidebar.classList.add('collapsed')
+
+    tooltip.textContent = 'Open sidebar';
+
+} else {
+
+    tooltip.textContent = 'Close sidebar';
+
 }
+
 
 // toggle menubar with localStorage persistence
 openbtn.addEventListener('click',()=>{

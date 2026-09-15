@@ -66,9 +66,13 @@ body.dark-theme {
     text-transform: capitalize;
 }
 .close-btn{
+    position: relative;
     font-size: 1.25rem;
     cursor: pointer;
     display: none;
+}
+.collapse{
+     position: relative;
 }
 .collapse-icon{
   font-size: 24px;
@@ -135,6 +139,7 @@ body.dark-theme {
     cursor: pointer;
     font-size: 40px;
     transition: 2s;
+    display: none;
 
 }
 .open-btn:hover{
@@ -168,10 +173,42 @@ body.dark-theme {
     justify-content: center;
 }
 
+.tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
 
+    background: #181717;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 15px;
+
+
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+
+.close-btn:hover .tooltip,
+.collapse:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar.collapsed .tooltip{
+   bottom: -35px;
+    left: 100%;
+    transform: translateY(-100%);
+}
 
 
 @media screen and (max-width:768px) {
+.open-btn{
+    display: inline-block;
+}
 .sidebar{
     transform: translateX(-300px);
     transition: 0.2s;
