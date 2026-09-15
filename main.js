@@ -36,14 +36,16 @@ openbtn.addEventListener('click',()=>{
     sidebar.classList.toggle('show-sidebar')
     sidebar.classList.remove('collapsed')
 
-    localStorage.setItem('showsidebar',sidebar.classList.contains('show-sidebar'))
+    localStorage.setItem('sidebar','open')
 })
-if(localStorage.getItem('showsidebar') ==='true'){
+if(localStorage.getItem('sidebar') ==='open'){
     sidebar.classList.add('show-sidebar')
 }
 
 closebtn.addEventListener('click',()=>{
     sidebar.classList.remove('show-sidebar')
+
+    localStorage.setItem('sidebar','closed')
 
 })
 
